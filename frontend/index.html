@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLPassist+ | Iqra University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="chat-container">
+        <header>
+            <div class="header-content">
+                <div class="logo-area">
+                    <i class="fas fa-robot"></i>
+                    <div class="title-text">
+                        <h2>NLP Assist+</h2>
+                        <span>Iqra University AI Support</span>
+                    </div>
+                </div>
+                <button id="new-chat" onclick="location.reload()"><i class="fas fa-plus"></i></button>
+            </div>
+        </header>
+        
+        <div id="chat-window">
+            <div class="message bot">
+                <i class="fas fa-university icon"></i>
+                <div class="text">Assalam-o-Alaikum! Main Iqra University ka AI assistant hoon. Main aapki kya madad kar sakta hoon?</div>
+            </div>
+        </div>
+
+        <div id="loading" class="typing-indicator" style="display: none;">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="input-container">
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="Ask about admissions, fee, or policies..." autocomplete="off">
+                <button id="send-btn" onclick="sendMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <p class="disclaimer">Powered by RAG Pipeline - Iqra University Project</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
